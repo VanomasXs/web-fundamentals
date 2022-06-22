@@ -1,0 +1,60 @@
+* {
+  color: #1730A3;
+}
+
+td {
+  width: calc(100%/5);
+}
+td.small {
+  width: calc(100%/10);
+}
+table {width: 50%}
+tr {
+  height: 40px;
+}
+.first, .second:hover {
+  background-color:#888f8f;
+}
+.second, .first:hover {
+  background-color:#f5f588;
+}
+
+.holder {
+  margin: 20px 0;
+  position: relative;
+  width: 225px;
+  aspect-ratio: 1/1;
+}
+.figure {
+  position: relative;
+  width: 150px;
+  aspect-ratio: 1/1;
+
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.holder > * {
+  position: absolute;
+}
+.figure:after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: 2px;
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+  border-radius: inherit;
+}
+
+.yellow {
+  background-color: #fbca9f;
+}
+.red {
+  background-color: rgba(217, 141, 141, 0.8);
+  bottom: 0;
+  right: 0;
+}
+
+.transformed {
+  transform: translate(50%, -50%);
+}
